@@ -20,16 +20,13 @@ bool jugando = true;
 int jugador =1;
 
 int main(int argc, char const *argv[]){
-
 	cout<<"POR NO IR A CLASES NO SE COMO USAR CLASES :( "<<endl;
-
 	char** m = new char*[11];
-    int posicionx=0,posiciony=0,posicionx2=0,posiciony2=0;
-    matriz (m);
+	int posicionx=0,posiciony=0,posicionx2=0,posiciony2=0;
+	matriz (m);
 	llenar(m);
-	 
-	 while(jugando){
-	 	if ((posicionx>=0 && posicionx<=11) && (posiciony>=0 && posiciony<=11) && (posicionx2>=0 && posicionx2<=11) && (posiciony2>=0 && posiciony2<=11)){
+	while(jugando){
+		if ((posicionx>=0 && posicionx<=11) && (posiciony>=0 && posiciony<=11) && (posicionx2>=0 && posicionx2<=11) && (posiciony2>=0 && posiciony2<=11)){
 	 		if(jugador==1){
 		 		cout<< "------------ Jugador 1 ------------"<<endl;
 		 		cout<<"JUGADOR 1 = +"<<endl;
@@ -102,7 +99,6 @@ void matriz (char** m){
 	for (int i =0; i<11 ;i++){
 		m[i]=new char[11];
     }
-	
 }
 
 void liberar_Memoria(char** m){
@@ -121,8 +117,7 @@ void llenar (char** m){
 	m[0][5]='#';
 	m[10][5]='#';
 	m[5][0]='+';
-	m[5][10]='+';
-		
+	m[5][10]='+';	
 }
 
 void imprimir (char** m){
